@@ -1,0 +1,340 @@
+@import url('./reset.css');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700;800&display=swap');
+html,
+body {
+  font-size: 62.5%;
+  font-family: 'Inter', sans-serif;
+  color: hsl(240, 100%, 5%);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+p {
+  font-size: 1.5rem;
+  margin-bottom: 2rem;
+  color: hsl(236, 13%, 42%);
+  line-height: 2.4rem;
+  font-weight: 500;
+}
+
+a {
+  font-size: 2rem;
+  text-decoration: none;
+}
+
+/* 
+  Utilities
+*/
+.container {
+  padding: 3rem 2rem;
+}
+
+.resp-img {
+  width: 100%;
+  margin-bottom: 1.6rem;
+}
+
+.btn {
+  background: hsl(5, 85%, 63%);
+  color: #fff;
+  border: none;
+  padding: 1.8rem 2rem;
+  font-size: 1.6rem;
+  letter-spacing: 0.6rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  transition: 0.3s;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background: hsl(240, 100%, 5%);
+}
+/* 
+  Navbar
+*/
+.navbar-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  width: 5rem;
+}
+
+.side-nav {
+  height: 100%; /* 100% Full-height */
+  width: 0; /* 0 width - change this with JavaScript */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Stay on top */
+  top: 0; /* Stay at the top */
+  right: 0;
+  background-color: #fff; /* Black*/
+  overflow-x: hidden; /* Disable horizontal scroll */
+  padding-top: 3rem; /* Place content 60px from the top */
+  transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
+}
+
+.show-nav {
+  width: 65%;
+}
+
+.hide-nav {
+  width: 0;
+}
+
+.side-nav img {
+  display: block;
+  margin-left: auto;
+  margin-right: 2rem;
+}
+
+.menu {
+  margin-top: 8rem;
+  margin-left: 2.4rem;
+}
+
+.menu li {
+  margin-bottom: 2.4rem;
+}
+
+.menu li {
+  font-size: 3rem;
+}
+
+.menu a {
+  color: hsl(240, 100%, 5%);
+}
+
+/* 
+  .hero
+*/
+.hero {
+  padding-top: 0;
+}
+
+.hero h1 {
+  font-size: 4rem;
+  font-weight: 700;
+  margin-bottom: 1.6rem;
+}
+
+/* 
+  New
+*/
+.new {
+  background: hsl(240, 100%, 5%);
+  padding: 1.6rem;
+  padding-bottom: 0.07rem;
+}
+
+.new h2 {
+  font-size: 2.4rem;
+  color: hsl(35, 77%, 62%);
+  font-weight: 700;
+  margin-bottom: 3rem;
+}
+
+.new section {
+  margin-top: 2.4rem;
+}
+
+.new h3 {
+  font-size: 2rem;
+  color: hsl(36, 100%, 99%);
+  font-weight: 700;
+  margin-bottom: 1.4rem;
+}
+
+.new p {
+  color: hsl(233, 8%, 79%);
+}
+
+.new hr {
+  border: none;
+  border-top: 0.1rem solid hsl(233, 8%, 79%);
+}
+
+/* 
+  Posts
+*/
+
+.post {
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 2rem;
+}
+
+.post img {
+  height: 16.5rem;
+  width: 31.9%;
+  margin-right: 2rem;
+}
+
+.post h2 {
+  font-size: 4rem;
+  font-weight: 700;
+  color: hsl(233, 8%, 79%);
+  margin-top: 0.6rem;
+  margin-bottom: 1.2rem;
+}
+
+.post h3 {
+  font-size: 1.8rem;
+  font-weight: 700;
+  margin-bottom: 1.8rem;
+}
+
+.post-content {
+  display: flex;
+  flex-direction: column;
+}
+
+/* 
+  attribution
+*/
+.attribution {
+  margin-top: 4.8rem;
+  text-align: center;
+  color: hsl(240, 100%, 5%);
+  font-size: 1.8rem;
+}
+.attribution a {
+  color: hsl(240, 100%, 5%);
+  font-weight: 700;
+}
+@media screen and (min-width: 1339px) {
+  .container {
+    padding: 2rem 0;
+    max-width: 1100px;
+    margin: 0 auto;
+  }
+
+  .btn {
+    padding: 1.8rem 3rem;
+    font-size: 1.4rem;
+  }
+  /* 
+    Navigation
+  */
+  .navbar-container {
+    margin-top: 3rem;
+    align-items: center;
+  }
+
+  .side-nav {
+    position: static;
+    height: initial;
+    padding: 0;
+    width: initial;
+    height: 2rem;
+    overflow: visible;
+  }
+
+  .side-nav .close {
+    display: none;
+  }
+
+  .menu {
+    display: flex;
+    align-items: center;
+    margin-top: 0;
+  }
+
+  .menu a {
+    font-size: 1.4rem;
+    margin-right: 4rem;
+    color: hsl(236, 13%, 42%);
+  }
+
+  .menu a:hover {
+    color: hsl(5, 85%, 63%);
+  }
+  .menu a li {
+    font-size: 2rem;
+  }
+
+  .menu a:last-of-type {
+    font-size: 1.4rem;
+    margin-right: 0;
+  }
+
+  .hamburger {
+    display: none;
+  }
+
+  /* 
+    hero
+  */
+
+  .hero {
+    margin: 0;
+  }
+
+  .header {
+    display: flex;
+    max-width: 1100px;
+    margin: 0 auto;
+    justify-content: space-between;
+  }
+
+  .header-section:first-of-type {
+    width: 68%;
+  }
+
+  .header-section:last-of-type {
+    width: 30%;
+    margin: 0;
+    height: 50rem;
+  }
+
+  /* 
+    new
+  */
+  .new {
+    height: 49rem;
+    padding: 4rem 2rem;
+  }
+
+  .new section {
+    margin-bottom: 3.6rem;
+  }
+  .new h2 {
+    font-size: 3rem;
+  }
+  /* 
+    teaser
+  */
+  .teaser {
+    display: flex;
+    justify-content: space-between;
+  }
+  .teaser h1 {
+    font-size: 5rem;
+    width: 40%;
+  }
+  .teaser div {
+    max-width: 35rem;
+  }
+
+  /* 
+    Posts
+  */
+  .posts {
+    display: flex;
+    justify-content: space-between;
+    max-width: 1100px;
+    margin: 0 auto;
+  }
+
+  .post {
+    width: 33%;
+  }
+
+  .post img {
+    margin-right: 2rem;
+  }
+}
