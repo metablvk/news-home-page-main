@@ -201,7 +201,9 @@ a {
   text-align: center;
   color: hsl(240, 100%, 5%);
   font-size: 1.8rem;
+  padding-bottom: 1.2rem;
 }
+
 .attribution a {
   color: hsl(240, 100%, 5%);
   font-weight: 700;
